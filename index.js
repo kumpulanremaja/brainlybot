@@ -172,17 +172,6 @@ client.on('message', message => {
         pesan += "\n\n*Created by @virdiosam*"
         Virdina.replyMessage(pesan)
     })
-
-    Virdina.createCommand('vd ', function(msg, res) {
-        try {
-            Virdina.replyMessage(eval(res))
-        } catch (err) {
-            Virdina.replyMessage(`err!  ${err}`)
-        }
-    })
-
-
-
 })
 
 client.initialize();
